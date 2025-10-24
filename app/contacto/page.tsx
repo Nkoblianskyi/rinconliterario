@@ -160,7 +160,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">Correo electrónico</h3>
-                        <p className="text-muted-foreground">contacto@rinconliterario.online</p>
+                        <p className="text-muted-foreground">contacto@rinconliterario.com</p>
                       </div>
                     </div>
                   </div>

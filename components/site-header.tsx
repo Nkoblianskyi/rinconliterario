@@ -1,14 +1,16 @@
 import Link from "next/link"
-import { BookOpen, Menu } from "lucide-react"
+import {  Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import Image from "next/image"
 
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <BookOpen className="h-6 w-6 text-primary" />
+          <Image src="/favicon.ico" alt="Rincón Literario" width={32} height={32} />
+
           <span className="text-xl font-semibold">Rincón Literario</span>
         </Link>
 
