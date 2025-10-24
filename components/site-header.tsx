@@ -11,7 +11,7 @@ export function SiteHeader() {
         <Link href="/" className="flex items-center gap-2">
           <Image src="/favicon.ico" alt="Rincón Literario" width={32} height={32} />
 
-          <span className="text-xl font-semibold">Rincón Literario</span>
+          <span className="text-xl font-semibold">Rincón LiterarioES</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">

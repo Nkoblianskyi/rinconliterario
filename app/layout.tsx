@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   description:
     "Descubre, explora y comparte tu pasión por los libros. Reseñas, recomendaciones y una comunidad de lectores.",
 
-  metadataBase: new URL("https://rinconliterario.com"),
+  metadataBase: new URL("https://rinconliterarioes.com"),
   openGraph: {
     title: "Rincón Literario - Tu espacio de lectura",
     description:
       "Descubre, explora y comparte tu pasión por los libros. Reseñas, recomendaciones y una comunidad de lectores.",
-    url: "https://rinconliterario.com",
+    url: "https://rinconliterarioes.com",
     siteName: "Rincón Literario",
     locale: "es_ES",
     type: "website",

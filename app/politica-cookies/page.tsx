@@ -90,7 +90,7 @@ export default function CookiePolicyPage() {
                 <h2>Contacto</h2>
                 <p className="leading-relaxed">
                   Si tienes alguna pregunta sobre nuestra Política de Cookies, por favor contáctanos a través de nuestra
-                  página de contacto o enviando un correo electrónico a contacto@rinconliterario.com.
+                  página de contacto o enviando un correo electrónico a contacto@rinconliterarioes.com.
                 </p>
               </CardContent>
             </Card>

@@ -127,7 +127,7 @@ export default function PrivacyPolicyPage() {
                 <p className="leading-relaxed">
                   Si tienes alguna pregunta sobre esta Política de Privacidad o sobre cómo manejamos tu información
                   personal, por favor contáctanos a través de nuestra página de contacto o enviando un correo
-                  electrónico a contacto@rinconliterario.com.
+                  electrónico a contacto@rinconliterarioes.com.
                 </p>
               </CardContent>
             </Card>
