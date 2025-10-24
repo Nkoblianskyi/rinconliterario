@@ -47,7 +47,7 @@ export function EventCard({ event }: EventCardProps) {
             <div className="flex items-center gap-2 text-muted-foreground">
               <Calendar className="h-4 w-4" />
               <span className="text-xs">
-                {new Date(event.date).toLocaleDateString("es-ES", { day: "numeric", month: "short" })}
+                Por acuerdo
               </span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
