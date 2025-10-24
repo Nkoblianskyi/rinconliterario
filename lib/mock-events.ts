@@ -6,7 +6,7 @@ export const mockEvents: Event[] = [
     title: "Club de Lectura: Cien Años de Soledad",
     description:
       "Únete a nuestra discusión mensual sobre la obra maestra de García Márquez. Exploraremos los temas del realismo mágico y la historia familiar.",
-    date: "",
+    date: "Por acuerdo",
     time: "18:00",
     location: "Sala Principal",
     image: "/event-club-lectura.jpg",
@@ -19,7 +19,7 @@ export const mockEvents: Event[] = [
     title: "Taller de Escritura Creativa",
     description:
       "Aprende técnicas de narrativa y desarrolla tu voz única como escritor. Ideal para principiantes y escritores experimentados.",
-    date: "",
+    date: "Por acuerdo",
     time: "16:00",
     location: "Sala de Talleres",
     image: "/event-taller-escritura.jpg",
@@ -32,7 +32,7 @@ export const mockEvents: Event[] = [
     title: "Presentación: Nuevas Voces Latinoamericanas",
     description:
       "Conoce a los autores emergentes de la literatura latinoamericana contemporánea. Sesión de preguntas y firma de libros.",
-    date: "",
+    date: "Por acuerdo",
     time: "19:00",
     location: "Auditorio",
     image: "/event-presentacion.jpg",
@@ -45,7 +45,7 @@ export const mockEvents: Event[] = [
     title: "Lectura de Poesía al Atardecer",
     description:
       "Una tarde íntima de poesía con lecturas de autores clásicos y contemporáneos. Ambiente relajado con café y té.",
-    date: "",
+    date: "Por acuerdo",
     time: "17:30",
     location: "Terraza",
     image: "/event-poesia.jpg",
