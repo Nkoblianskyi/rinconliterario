@@ -54,6 +54,7 @@ export default function HomePage() {
               {/* Left Content */}
               <div className="space-y-8 text-center lg:text-left">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium backdrop-blur-sm">
+                  <Sparkles className="h-4 w-4" />
                   Tu espacio literario en español
                 </div>
 
@@ -144,42 +145,109 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* About Service Section */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-20 md:py-28 bg-gradient-to-b from-background via-muted/20 to-background">
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">¿Qué ofrecemos?</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Rincón Literario es más que una biblioteca digital. Es una comunidad vibrante de lectores apasionados.
-              </p>
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
+              {/* Left - Content */}
+              <div className="space-y-6">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                  <Sparkles className="h-4 w-4" />
+                  Sobre nosotros
+                </div>
+                <h2 className="text-4xl md:text-5xl font-bold text-balance leading-tight">
+                  Tu refugio literario en español
+                </h2>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Rincón Literario es más que una biblioteca digital. Es una comunidad vibrante donde los amantes de la
+                  lectura se encuentran, comparten y descubren nuevas historias.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Nuestra sala de lectura ofrece un espacio tranquilo y acogedor, perfecto para sumergirse en las
+                  páginas de un buen libro o participar en eventos literarios con otros lectores apasionados.
+                </p>
+                <Button size="lg" asChild className="mt-4">
+                  <Link href="/sobre-nosotros">
+                    Conoce más sobre nosotros
+                    <ArrowRight className="h-4 w-4 ml-2" />
+                  </Link>
+                </Button>
+              </div>
+
+              {/* Right - Image Grid */}
+              <div className="relative">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-4">
+                    <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
+                      <Image
+                        src="/reading-room-natural-light.jpg"
+                        alt="Sala con luz natural"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                      <Image src="/reading-room-cafe.jpg" alt="Café literario" fill className="object-cover" />
+                    </div>
+                  </div>
+                  <div className="space-y-4 pt-8">
+                    <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
+                      <Image src="/reading-room-study-area.jpg" alt="Área de estudio" fill className="object-cover" />
+                    </div>
+                    <div className="relative h-48 rounded-xl overflow-hidden shadow-lg">
+                      <Image
+                        src="/reading-room-bookshelves.jpg"
+                        alt="Estanterías de libros"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                {/* Decorative element */}
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-accent/10 rounded-full blur-3xl" />
+              </div>
             </div>
+
+            {/* Features Grid */}
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="text-center space-y-4 p-6 rounded-lg bg-background shadow-sm">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary">
-                  <BookOpen className="h-7 w-7" />
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 to-primary/10 p-8 hover:shadow-lg transition-all duration-300">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500" />
+                <div className="relative space-y-4">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
+                    <BookOpen className="h-7 w-7" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Colección Curada</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Obras literarias cuidadosamente seleccionadas de autores latinoamericanos y españoles.
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold">Colección Curada</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Obras literarias cuidadosamente seleccionadas de autores latinoamericanos y españoles.
-                </p>
               </div>
-              <div className="text-center space-y-4 p-6 rounded-lg bg-background shadow-sm">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary">
-                  <Users className="h-7 w-7" />
+
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-accent/5 to-accent/10 p-8 hover:shadow-lg transition-all duration-300">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500" />
+                <div className="relative space-y-4">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-accent/10 text-accent-foreground group-hover:scale-110 transition-transform duration-300">
+                    <Users className="h-7 w-7" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Comunidad Activa</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Únete a clubes de lectura, talleres y eventos para compartir tu pasión por los libros.
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold">Comunidad Activa</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Únete a clubes de lectura, talleres y eventos para compartir tu pasión por los libros.
-                </p>
               </div>
-              <div className="text-center space-y-4 p-6 rounded-lg bg-background shadow-sm">
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary">
-                  <MessageCircle className="h-7 w-7" />
+
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 to-accent/10 p-8 hover:shadow-lg transition-all duration-300">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500" />
+                <div className="relative space-y-4">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary group-hover:scale-110 transition-transform duration-300">
+                    <MessageCircle className="h-7 w-7" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Reseñas Auténticas</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Lee opiniones honestas de otros lectores y comparte tus propias experiencias literarias.
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold">Reseñas Auténticas</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Lee opiniones honestas de otros lectores y comparte tus propias experiencias literarias.
-                </p>
               </div>
             </div>
           </div>
