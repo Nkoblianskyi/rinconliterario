@@ -10,7 +10,7 @@ import { EventCard } from "@/components/event-card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { BookOpen, Calendar, Mail, Users, Sparkles, MessageCircle, ArrowRight } from "lucide-react"
+import { BookOpen, Calendar, Mail, Users, MessageCircle, ArrowRight } from "lucide-react"
 import { mockBooks } from "@/lib/mock-books"
 import { mockEvents } from "@/lib/mock-events"
 import Link from "next/link"
@@ -54,7 +54,6 @@ export default function HomePage() {
               {/* Left Content */}
               <div className="space-y-8 text-center lg:text-left">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium backdrop-blur-sm">
-                  <Sparkles className="h-4 w-4" />
                   Tu espacio literario en español
                 </div>
 
@@ -151,7 +150,6 @@ export default function HomePage() {
               {/* Left - Content */}
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                  <Sparkles className="h-4 w-4" />
                   Sobre nosotros
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold text-balance leading-tight">

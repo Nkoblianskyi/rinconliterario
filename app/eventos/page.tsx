@@ -38,25 +38,6 @@ export default function EventosPage() {
           </div>
         </section>
 
-        {/* Filter */}
-        <section className="py-8 border-b bg-muted/30">
-          <div className="container">
-            <div className="max-w-md mx-auto">
-              <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Seleccionar categoría" />
-                </SelectTrigger>
-                <SelectContent>
-                  {eventCategories.map((category) => (
-                    <SelectItem key={category.value} value={category.value}>
-                      {category.label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </div>
-          </div>
-        </section>
 
         <section className="py-12">
           <div className="container">
