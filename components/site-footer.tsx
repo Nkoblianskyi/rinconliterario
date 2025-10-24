@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { BookOpen } from "lucide-react"
+import Image from "next/image"
 
 export function SiteFooter() {
   return (
@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <BookOpen className="h-5 w-5 text-primary" />
+              <Image src="/favicon.ico" alt="Logo" width={24} height={24} />
               <span className="font-semibold">Rincón Literario</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">

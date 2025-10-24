@@ -97,10 +97,6 @@ export default function EventosPage() {
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                           <div className="flex items-center gap-2 text-muted-foreground">
-                            <Calendar className="h-4 w-4 flex-shrink-0" />
-                            <span>{event.date}</span>
-                          </div>
-                          <div className="flex items-center gap-2 text-muted-foreground">
                             <Clock className="h-4 w-4 flex-shrink-0" />
                             <span>{event.time}</span>
                           </div>
@@ -108,12 +104,7 @@ export default function EventosPage() {
                             <MapPin className="h-4 w-4 flex-shrink-0" />
                             <span>{event.location}</span>
                           </div>
-                          <div className="flex items-center gap-2 text-muted-foreground">
-                            <Users className="h-4 w-4 flex-shrink-0" />
-                            <span>
-                              {event.availableSpots > 0 ? `${event.availableSpots} lugares disponibles` : "Agotado"}
-                            </span>
-                          </div>
+
                         </div>
                       </div>
 

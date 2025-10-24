@@ -73,20 +73,7 @@ export default async function EventPage({ params }: EventPageProps) {
                   <Separator />
 
                   <div className="space-y-3 text-sm">
-                    <div className="flex items-start gap-3">
-                      <Calendar className="h-5 w-5 text-muted-foreground mt-0.5" />
-                      <div>
-                        <p className="font-medium">Fecha</p>
-                        <p className="text-muted-foreground">
-                          {new Date(event.date).toLocaleDateString("es-ES", {
-                            weekday: "long",
-                            year: "numeric",
-                            month: "long",
-                            day: "numeric",
-                          })}
-                        </p>
-                      </div>
-                    </div>
+
 
                     <div className="flex items-start gap-3">
                       <Clock className="h-5 w-5 text-muted-foreground mt-0.5" />
