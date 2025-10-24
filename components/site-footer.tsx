@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div className="space-y-3">
             <div className="flex items-center gap-2">
               <Image src="/favicon.ico" alt="Logo" width={24} height={24} />
-              <span className="font-semibold">Rincón LiterarioES</span>
+              <span className="font-semibold">Rincón Literario ES</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Tu espacio para descubrir y compartir la pasión por la lectura.
